@@ -1,591 +1,468 @@
 # html-city-tourism
-### Ex-1
-#### Creating a html file to display the contents as seen in the following image.
-#### Program:
-```
-<!DOCTYPE html>
-<html>
-<head>
-<title>My Day</title>
-</head>
-<body>
-<table cellpadding= "10" cellspacing="10" style="border-style: double;">
-<tr>
-<th colspan="2" class="center" style="border-style: double;"><mark>My Day</mark></th>
-</tr>
-<tr>
-<td style="border-style: double;">
-<ol>
-<li>wake up early
-<ul>
-<li style="list-style-type: square; margin-bottom: 20px">5AM</li>
-<li>walk</li>
-<li>jog</li>
-</ul>
-</li>
-</ol>
-</td>
-<td rowspan="3" style="border-style: double;">
-<table>
-<tr>
-<th colspan="2" class="center highlight" style="border-style: double;"><mark>Things to watch</mark></th>
-</tr>
-<tr >
-<td style="border-style: double;"><img src="1.png" alt="image 1" width="100" height="100" >
-<td style="border-style: double;"><img src="2.png" alt="image 2" width="100" height="100">
-</tr>
-<tr>
-<td style="border-style: double;"><img src="3.png" alt="image 3" width="100" height="100">
-<td style="border-style: double;"><img src="4.png" alt="image 4" width="100" height="100">
-</td>
-
-</tr>
-<tr>
-<td></td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td style="border-style: double;">
-<ol start="2">
-<li>breakfast
-<ul>
-<li style="list-style-type: square; margin-bottom: 20px">8AM</li>
-<li>eggs</li>
-<li>coffee</li>
-</ul>
-</li>
-</ol>
-</td>
-</tr>
-<tr>
-<td style="border-style: double;">
-<ol start="3">
-<li>go to Saveetha
-<ul>
-<li style="list-style-type: square; margin-bottom: 20px">8AM</li>
-<li>attend classes</li>
-<li>to be continued</li>
-</ul>
-</li>
-</ol>
-</td>
-</tr>
-</table>
-</body>
-</html>
-```
-
-#### Output
-![Screenshot 2024-07-02 134519](https://github.com/ManojTella/html-city-tourism/assets/94883876/48b88671-5277-4e5d-b4f7-4952d2fcf276)
-#### Result:
-Thus,Creating a html file to display the content in the above picture was executed successfully.
-
-
-## Ex: 2
-#### Aim: To design a website for a College.
-#### Program:
-##### Index.html
+# Aim: To impement a web page for city Tourism
+## Program:
+### home.html
 ```
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>College Name</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>City Tourism</title>
+    <style>
+        body {
+            background-color: #f0f0f0; 
+        }
+        .header {
+            text-align: center;
+        }
+        .navbar {
+            text-align: center;
+            margin: 20px;
+        }
+        .navbar a {
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .content {
+            text-align: center;
+            margin: 20px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <img src="image.png" alt="College Logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="academics.html">Academics</a></li>
-                <li><a href="admission.html">Admission</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="Courses.html">Courses</a></li>
-            </ul>
-    </header>
-    <main>
-        <h1>Saveetha Engineering College</h1>
-        <p>Welcome to our college, where we offer a wide range of academic programs and extracurricular activities.</p>
-    </main>
-    <footer>
-        <p>&copy; 2024 College Name. All rights reserved.</p>
-    </footer>
+    <div class="header">
+        <img src="images/logo.jpeg" alt="City Logo" width="1200" height="100">
+        <h1>Welcome to Hyberabad Tourism</h1>
+    </div>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="heritage.html">Heritage</a>
+        <a href="hotel-booking.html">Hotel Booking</a>
+        <a href="gallery.html">Gallery</a>
+    </div>
+    <div class="content">
+        <p>Welcome to SEC - Saveetha Engineering College (Autonomous), a distinguished institution established in 2001 under the visionary leadership of Dr. N. M. Veeraiyan— a committed medical professional and philanthropist par excellence. </p>
+           <p> With over 35 years of unwavering commitment to excellence in education, our college has emerged as the forefront of engineering education and research.</p>
+    </div>
 </body>
 </html>
 ```
-
-##### Academics.html
+### heritage.html
 ```
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academics - Saveetha Engineering College</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>City Tourism - Heritage</title>
 </head>
 <body>
-    <header>
-        <img src="image.png" alt="College Logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="academics.html">Academics</a></li>
-                <li><a href="admission.html">Admission</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="courses/computer-science.html">Courses</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>Academics</h1>
-        <p>Explore our academic programs and research opportunities.</p>
-    </main>
-    <footer>
-        <p>&copy; 2024 College Name. All rights reserved.</p>
-    </footer>
+    <div class="header">
+        <img src="images/logo.jpeg" alt="City Logo" width="1200" height="100">
+        <h1>Heritage Sites of Hydearbad</h1>
+    </div>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="heritage.html">Heritage</a>
+        <a href="hotel-booking.html">Hotel Booking</a>
+        <a href="gallery.html">Gallery</a>
+    </div>
+    <div class="content">
+      
+            <a href="heritage-sites/site1.html"><img src="images/heritage1.jpeg" alt="Heritage Site 1" width="200"></a>
+            <a href="heritage-sites/site2.html"><img src="images/heritage2.jpeg" alt="Heritage Site 2" width="200"></a>
+            <a href="heritage-sites/site3.html"><img src="images/heritage3.jpeg" alt="Heritage Site 3" width="200"></a>
+            <a href="heritage-sites/site4.html"><img src="images/heritage4.jpeg" alt="Heritage Site 4" width="200"></a>
+            <a href="heritage-sites/site5.html"><img src="images/heritage5.jpeg" alt="Heritage Site 5" width="200"></a>
+            <a href="heritage-sites/site6.html"><img src="images/heritage6.jpeg" alt="Heritage Site 6" width="200"></a>
+            <a href="heritage-sites/site7.html"><img src="images/heritage7.jpeg" alt="Heritage Site 7" width="200"></a>
+            <a href="heritage-sites/site8.html"><img src="images/heritage8.jpeg" alt="Heritage Site 8" width="200"></a>
+            <a href="heritage-sites/site9.html"><img src="images/heritage9.jpeg" alt="Heritage Site 9" width="200"></a>
+            <a href="heritage-sites/site10.html"><img src="images/heritage10.jpeg" alt="Heritage Site 10" width="200"></a>
+        
+    </div>
 </body>
 </html>
 ```
-
-##### Admission.html
-```
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admission - College Name</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <img src="image.png" alt="College Logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="academics.html">Academics</a></li>
-                <li><a href="admission.html">Admission</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="courses/computer-science.html">Courses</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>Admission</h1>
-        <p>Learn about our admission process, requirements, and deadlines.</p>
-    </main>
-    <footer>
-        <p>&copy; 2024 College Name. All rights reserved.</p>
-    </footer>
-</body>
-</html>
-```
-
-##### Gallery.html
+### hotel-booking.html
 ```
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery - College Name</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>City Tourism - Hotel Booking</title>
 </head>
 <body>
-    <header>
-        <img src="image.png" alt="College Logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="academics.html">Academics</a></li>
-                <li><a href="admission.html">Admission</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="courses/computer-science.html">Courses</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>Gallery</h1>
-        <p>Explore our campus and student life through these photos.</p>
-        <img src="clg1.jpeg" alt="Gallery Image 1">
-        <img src="clg2.jpeg" alt="Gallery Image 2">
-        <img src="clg3.jpeg" alt="Gallery Image 3">
-        <img src="clg4.jpeg" alt="Gallery Image 4">
-    </main>
-    <footer>
-        <p>&copy; 2024 College Name. All rights reserved.</p>
-    </footer>
+    <div class="header">
+        <img src="images/logo.jpeg" alt="City Logo" width="1200" height="100">
+        <h1>Book Your Stay in Hyberabad</h1>
+    </div>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="heritage.html">Heritage</a>
+        <a href="hotel-booking.html">Hotel Booking</a>
+        <a href="gallery.html">Gallery</a>
+    </div>
+    <div class="content">
+        <form action="submit-booking.html" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone"><br><br>
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" name="checkin"><br><br>
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" name="checkout"><br><br>
+            <label for="roomtype">Room Type:</label>
+            <select id="roomtype" name="roomtype">
+                <option value="single">Single</option>
+                <option value="double">Double</option>
+                <option value="suite">Suite</option>
+            </select><br><br>
+            <input type="submit" value="Book Now">
+        </form>
+    </div>
 </body>
 </html>
 ```
-##### Courses.html
+### gallery.html
 ```
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Courses Offered - College Name</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>City Tourism - Gallery</title>
 </head>
 <body>
-    <header>
-        <img src="image.png" alt="College Logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="academics.html">Academics</a></li>
-                <li><a href="admission.html">Admission</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="Courses.html">Courses</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>Courses Offered</h1>
-        <p>We offer a diverse range of courses across multiple disciplines. Explore our course offerings below:</p>
-        <ul>
-            <li><a href="computer.html">Computer Science</a></li>
-            <li><a href="mathematics.html">Mathematics</a></li>
-            <li><a href="english.html">English</a></li>
-            <li><a href="social.html">Sociology</a></li>
-            <li><a href="economics.html">Economics</a></li>
-            <li><a href="mangement.html">Business Management</a></li>
-        </ul>
-    </main>
-    <footer>
-        <p>&copy; 2024 College Name. All rights reserved.</p>
-    </footer>
+    <div class="header">
+        <img src="images/logo.jpeg" alt="City Logo" width="1200" height="100">
+        <h1>Gallery of Hyberabad</h1>
+    </div>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="heritage.html">Heritage</a>
+        <a href="hotel-booking.html">Hotel Booking</a>
+        <a href="gallery.html">Gallery</a>
+    </div>
+    <div class="content">
+        <img src="images/gallery1.jpeg" alt="Gallery Image 1" width="300">
+        <img src="images/gallery2.jpeg" alt="Gallery Image 2" width="300">
+        <img src="images/gallery3.jpeg" alt="Gallery Image 3" width="250">
+        <img src="images/gallery4.jpeg" alt="Gallery Image 4" width="250">
+    </div>
 </body>
 </html>
 ```
-##### ComputerScience.html
+### index.html
 ```
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Computer Science - College Name</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>City Tourism - Home</title>
 </head>
 <body>
-    <header>
-        <img src="image.png" alt="College Logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="academics.html">Academics</a></li>
-                <li><a href="admission.html">Admission</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="Courses.html">Courses</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>Computer Science</h1>
-        <p>Welcome to the Computer Science department. Here you can find information about our programs, faculty, and research opportunities.</p>
-    </main>
-    <footer>
-        <p>&copy; 2024 College Name. All rights reserved.</p>
-    </footer>
+    <div class="header">
+        <img src="images/logo.jpeg" alt="City Logo" width="1200" height="100">
+        <h1>Welcome to Hyberabad Tourism</h1>
+    </div>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="heritage.html">Heritage</a>
+        <a href="hotel-booking.html">Hotel Booking</a>
+        <a href="gallery.html">Gallery</a>
+    </div>
+    <div class="content">
+        <p>Hyberabad is a beautiful city with a rich history and vibrant culture.</p>
+        <p>Explore our heritage sites, book a comfortable stay, and view our gallery to see the stunning landmarks we have to offer.</p>
+    </div>
 </body>
 </html>
 ```
-##### Mathematics.html
+### site1.html
 ```
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mathematics - College Name</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>City Tourism - Heritage Site 1</title>
 </head>
 <body>
-    <header>
-        <img src="image.png" alt="College Logo">
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../academics.html">Academics</a></li>
-                <li><a href="../admission.html">Admission</a></li>
-                <li><a href="../gallery.html">Gallery</a></li>
-                <li><a href="../courses.html">Courses</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>Mathematics</h1>
-        <p>The Mathematics program at College Name offers a rigorous education in pure and applied mathematics. Our curriculum includes courses in calculus, linear algebra, differential equations, probability, and more.</p>
-        <h2>Course Structure</h2>
-        <ul>
-            <li>Calculus I</li>
-            <li>Calculus II</li>
-            <li>Linear Algebra</li>
-            <li>Differential Equations</li>
-            <li>Probability and Statistics</li>
-            <li>Abstract Algebra</li>
-            <li>Real Analysis</li>
-            <li>Numerical Methods</li>
-        </ul>
-        <h2>Faculty</h2>
-        <p>Our faculty are leaders in mathematical research and education, committed to helping students succeed in their studies and careers.</p>
-    </main>
-    <footer>
-        <p>&copy; 2024 College Name. All rights reserved.</p>
-    </footer>
+    <div class="header">
+        <img src="../images/logo.jpeg" alt="City Logo" width="1200" height="100">
+        <h1>Heritage Site 1</h1>
+    </div>
+    <div class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="../heritage.html">Heritage</a>
+        <a href="../hotel-booking.html">Hotel Booking</a>
+        <a href="../gallery.html">Gallery</a>
+    </div>
+    <div class="content">
+        <img src="../images/heritage1.jpeg" alt="Heritage Site 1" width="300">
+        <p>Description and history of Heritage Site 1.</p>
+    </div>
 </body>
 </html>
 ```
-##### English.html
+
+### site2.html
 ```
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>English - College Name</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>City Tourism - Heritage Site 2</title>
 </head>
 <body>
-    <header>
-        <img src="image.png" alt="College Logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="academics.html">Academics</a></li>
-                <li><a href="admission.html">Admission</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="Courses.html">Courses</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>English</h1>
-        <p>The English program at College Name covers literature, writing, and critical thinking. Students will explore a wide range of literary works and develop strong analytical and communication skills.</p>
-        <h2>Course Structure</h2>
-        <ul>
-            <li>Introduction to Literature</li>
-            <li>Creative Writing</li>
-            <li>Shakespearean Studies</li>
-            <li>American Literature</li>
-            <li>Modernist Literature</li>
-            <li>Postcolonial Literature</li>
-            <li>Literary Theory</li>
-            <li>Advanced Composition</li>
-        </ul>
-        <h2>Faculty</h2>
-        <p>Our faculty are accomplished writers and scholars, dedicated to fostering a love of literature and a mastery of writing in their students.</p>
-    </main>
-    <footer>
-        <p>&copy; 2024 College Name. All rights reserved.</p>
-    </footer>
+    <div class="header">
+        <img src="../images/logo.jpeg" alt="City Logo" width="1200" height="100">
+        <h1>Heritage Site 2</h1>
+    </div>
+    <div class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="../heritage.html">Heritage</a>
+        <a href="../hotel-booking.html">Hotel Booking</a>
+        <a href="../gallery.html">Gallery</a>
+    </div>
+    <div class="content">
+        <img src="../images/heritage2.jpeg" alt="Heritage Site 2" width="300">
+        <p>Description and history of Heritage Site 2.</p>
+    </div>
 </body>
 </html>
 ```
-##### Social.html
+### site3.html
 ```
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sociology - College Name</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>City Tourism - Heritage Site 3</title>
 </head>
 <body>
-    <header>
-        <img src="image.png" alt="College Logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="academics.html">Academics</a></li>
-                <li><a href="admission.html">Admission</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="Courses.html">Courses</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>Sociology</h1>
-        <p>The Sociology program at College Name examines the structures of societies, groups, and organizations. Our courses cover topics such as social theory, research methods, and social issues.</p>
-        <h2>Course Structure</h2>
-        <ul>
-            <li>Introduction to Sociology</li>
-            <li>Social Theory</li>
-            <li>Research Methods in Sociology</li>
-            <li>Sociology of the Family</li>
-            <li>Sociology of Education</li>
-            <li>Sociology of Health</li>
-            <li>Criminology</li>
-            <li>Urban Sociology</li>
-        </ul>
-        <h2>Faculty</h2>
-        <p>Our faculty members are experts in various fields of sociology, dedicated to advancing knowledge and solving social problems through research and teaching.</p>
-    </main>
-</head>
+    <div class="header">
+        <img src="../images/logo.jpeg" alt="City Logo" width="1200" height="100">
+        <h1>Heritage Site 3</h1>
+    </div>
+    <div class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="../heritage.html">Heritage</a>
+        <a href="../hotel-booking.html">Hotel Booking</a>
+        <a href="../gallery.html">Gallery</a>
+    </div>
+    <div class="content">
+        <img src="../images/heritage3.jpeg" alt="Heritage Site 3" width="300">
+        <p>Description and history of Heritage Site 3.</p>
+    </div>
+</body>
 </html>
 ```
-##### Economics.html
+### site4.html
 ```
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Economics - College Name</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>City Tourism - Heritage Site 4</title>
 </head>
 <body>
-    <header>
-        <img src="image.png" alt="College Logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="academics.html">Academics</a></li>
-                <li><a href="admission.html">Admission</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="Courses.html">Courses</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>Economics</h1>
-        <p>The Economics program at College Name provides students with a solid foundation in economic theory, quantitative methods, and applied economics. Our curriculum prepares students for careers in business, government, and research.</p>
-        <h2>Course Structure</h2>
-        <ul>
-            <li>Microeconomics</li>
-            <li>Macroeconomics</li>
-            <li>Econometrics</li>
-            <li>Public Economics</li>
-            <li>International Economics</li>
-            <li>Development Economics</li>
-            <li>Labor Economics</li>
-            <li>Financial Economics</li>
-        </ul>
-        <h2>Faculty</h2>
-        <p>Our faculty members are accomplished economists with expertise in various areas of economic research and policy analysis.</p>
-    </main>
-    <footer>
-        <p>&copy; 2024 College Name. All rights reserved.</p>
-    </footer>
+    <div class="header">
+        <img src="../images/logo.jpeg" alt="City Logo" width="1200" height="100">
+        <h1>Heritage Site 4</h1>
+    </div>
+    <div class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="../heritage.html">Heritage</a>
+        <a href="../hotel-booking.html">Hotel Booking</a>
+        <a href="../gallery.html">Gallery</a>
+    </div>
+    <div class="content">
+        <img src="../images/heritage4.jpeg" alt="Heritage Site 4" width="300">
+        <p>Description and history of Heritage Site 4.</p>
+    </div>
 </body>
 </html>
 ```
-##### Management.html
+### site5.html
 ```
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business Management - College Name</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>City Tourism - Heritage Site 5</title>
 </head>
 <body>
-    <header>
-        <img src="image.png" alt="College Logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="academics.html">Academics</a></li>
-                <li><a href="admission.html">Admission</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="Courses.html">Courses</a></li>
-            </ul>
-    </header>
-    <main>
-        <h1>Business Management</h1>
-        <p>The Business Management program at College Name equips students with the knowledge and skills needed to succeed in the business world. Our curriculum covers management principles, organizational behavior, finance, marketing, and more.</p>
-        <h2>Course Structure</h2>
-        <ul>
-            <li>Principles of Management</li>
-            <li>Organizational Behavior</li>
-            <li>Financial Management</li>
-            <li>Marketing Management</li>
-            <li>Operations Management</li>
-            <li>Human Resource Management</li>
-            <li>Strategic Management</li>
-            <li>Business Ethics</li>
-        </ul>
-        <h2>Faculty</h2>
-        <p>Our faculty members are experienced business professionals and academics, dedicated to providing a comprehensive business education to our students.</p>
-    </main>
-    <footer>
-        <p>&copy; 2024 College Name. All rights reserved.</p>
-    </footer>
+    <div class="header">
+        <img src="../images/logo.jpeg" alt="City Logo" width="1200" height="100">
+        <h1>Heritage Site 5</h1>
+    </div>
+    <div class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="../heritage.html">Heritage</a>
+        <a href="../hotel-booking.html">Hotel Booking</a>
+        <a href="../gallery.html">Gallery</a>
+    </div>
+    <div class="content">
+        <img src="../images/heritage5.jpeg" alt="Heritage Site 5" width="300">
+        <p>Description and history of Heritage Site 5.</p>
+    </div>
 </body>
 </html>
+
 ```
-##### Styles.css
+### site6.html
 ```
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>City Tourism - Heritage Site 6</title>
+</head>
+<body>
+    <div class="header">
+        <img src="../images/logo.jpeg" alt="City Logo" width="1200" height="100">
+        <h1>Heritage Site 6</h1>
+    </div>
+    <div class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="../heritage.html">Heritage</a>
+        <a href="../hotel-booking.html">Hotel Booking</a>
+        <a href="../gallery.html">Gallery</a>
+    </div>
+    <div class="content">
+        <img src="../images/heritage6.jpeg" alt="Heritage Site 6" width="300">
+        <p>Description and history of Heritage Site 6.</p>
+    </div>
+</body>
+</html>
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header img {
-    max-height: 50px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-nav ul li {
-    margin: 0 1rem;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-main {
-    padding: 2rem;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
 ```
-### Output:
-![Screenshot 2024-07-02 133856](https://github.com/ManojTella/html-city-tourism/assets/94883876/f9081a4f-6979-4263-957f-fc161cae6b6c)
-![Screenshot 2024-07-02 133916](https://github.com/ManojTella/html-city-tourism/assets/94883876/18648474-3cf4-4c9e-b0e3-5a2444e1b70f)
-![Screenshot 2024-07-02 133925](https://github.com/ManojTella/html-city-tourism/assets/94883876/e2b5c3a9-7e68-47cc-86a9-ee06274eb16d)
-![Screenshot 2024-07-02 133933](https://github.com/ManojTella/html-city-tourism/assets/94883876/d79bbf20-9dec-4659-91aa-219b73754e0a)
-![Screenshot 2024-07-02 134014](https://github.com/ManojTella/html-city-tourism/assets/94883876/bce5d78e-95f1-4043-9173-59a7d2f42eb8)
-![Screenshot 2024-07-02 134024](https://github.com/ManojTella/html-city-tourism/assets/94883876/cf8c3d80-333c-4774-8df5-eacd7ad8d874)
-![Screenshot 2024-07-02 134037](https://github.com/ManojTella/html-city-tourism/assets/94883876/da08a16b-f10b-4773-8dce-76f970c0e226)
-![Screenshot 2024-07-02 134047](https://github.com/ManojTella/html-city-tourism/assets/94883876/5eb561b1-f512-4016-b500-ee70439dd44b)
-![Screenshot 2024-07-02 134103](https://github.com/ManojTella/html-city-tourism/assets/94883876/e21e67bd-8da8-4d94-8fdb-765ee1dc7dc3)
-![Screenshot 2024-07-02 134122](https://github.com/ManojTella/html-city-tourism/assets/94883876/8fc7880c-8d53-4b4c-b6b5-9f7081722e55)
-### Result:
-Thus,Creating a website for college was executed successfully.
+### site7.html
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>City Tourism - Heritage Site 7</title>
+</head>
+<body>
+    <div class="header">
+        <img src="../images/logo.jpeg" alt="City Logo" width="1200" height="100">
+        <h1>Heritage Site 7</h1>
+    </div>
+    <div class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="../heritage.html">Heritage</a>
+        <a href="../hotel-booking.html">Hotel Booking</a>
+        <a href="../gallery.html">Gallery</a>
+    </div>
+    <div class="content">
+        <img src="../images/heritage7.jpeg" alt="Heritage Site 7" width="300">
+        <p>Description and history of Heritage Site 7.</p>
+    </div>
+</body>
+</html>
+
+```
+### site8.html
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>City Tourism - Heritage Site 8</title>
+</head>
+<body>
+    <div class="header">
+        <img src="../images/logo.jpeg" alt="City Logo" width="1200" height="100">
+        <h1>Heritage Site 8</h1>
+    </div>
+    <div class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="../heritage.html">Heritage</a>
+        <a href="../hotel-booking.html">Hotel Booking</a>
+        <a href="../gallery.html">Gallery</a>
+    </div>
+    <div class="content">
+        <img src="../images/heritage8.jpeg" alt="Heritage Site 8" width="300">
+        <p>Description and history of Heritage Site 8.</p>
+    </div>
+</body>
+</html>
+
+```
+### site9.html
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>City Tourism - Heritage Site 9</title>
+</head>
+<body>
+    <div class="header">
+        <img src="../images/logo.jpeg" alt="City Logo" width="1200" height="100">
+        <h1>Heritage Site 9</h1>
+    </div>
+    <div class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="../heritage.html">Heritage</a>
+        <a href="../hotel-booking.html">Hotel Booking</a>
+        <a href="../gallery.html">Gallery</a>
+    </div>
+    <div class="content">
+        <img src="../images/heritage1.jpeg" alt="Heritage Site 9" width="300">
+        <p>Description and history of Heritage Site 9.</p>
+    </div>
+</body>
+</html>
+
+```
+### site10.html
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>City Tourism - Heritage Site 10</title>
+</head>
+<body>
+    <div class="header">
+        <img src="../images/logo.jpeg" alt="City Logo" width="1200" height="100">
+        <h1>Heritage Site 10</h1>
+    </div>
+    <div class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="../heritage.html">Heritage</a>
+        <a href="../hotel-booking.html">Hotel Booking</a>
+        <a href="../gallery.html">Gallery</a>
+    </div>
+    <div class="content">
+        <img src="../images/heritage10.jpeg" alt="Heritage Site 10" width="300">
+        <p>Description and history of Heritage Site 10.</p>
+    </div>
+</body>
+</html>
+
+```
+## Output
+![Screenshot (436)](https://github.com/KayyuruTharani/html-city-tourism/assets/142209319/5c04061d-c071-4652-b433-78b1807e8f53)
+![Screenshot (437)](https://github.com/KayyuruTharani/html-city-tourism/assets/142209319/6bc42fcd-aa1e-4200-b503-c10a0c4d2c0d)
+![Screenshot (443)](https://github.com/KayyuruTharani/html-city-tourism/assets/142209319/4c1df70c-0b44-4167-944d-9fd174bbf446)
+![Screenshot (444)](https://github.com/KayyuruTharani/html-city-tourism/assets/142209319/cef8d794-a1e1-453c-b9c9-138cc614c0e8)
+
+![Screenshot (445)](https://github.com/KayyuruTharani/html-city-tourism/assets/142209319/5ad7dac7-4714-4b75-88ee-45aae156febc)
+
+![Screenshot (446)](https://github.com/KayyuruTharani/html-city-tourism/assets/142209319/18e50ef8-4d5c-46fa-af46-54f83e33d0ef)
+![Screenshot (447)](https://github.com/KayyuruTharani/html-city-tourism/assets/142209319/f85d0f1e-2604-4765-af78-75434f975d6e)
+![Screenshot (448)](https://github.com/KayyuruTharani/html-city-tourism/assets/142209319/9c9c6a18-7a25-49bd-92cb-22b15fca8f93)
+
+![Screenshot (449)](https://github.com/KayyuruTharani/html-city-tourism/assets/142209319/d4b5ac4c-6075-4ed9-9250-70c108d6bb68)
+![Screenshot (450)](https://github.com/KayyuruTharani/html-city-tourism/assets/142209319/ee449ac5-d39b-4eb4-8996-1eb557d03105)
+![Screenshot (451)](https://github.com/KayyuruTharani/html-city-tourism/assets/142209319/9d305a44-c4e8-4748-b51b-0d27132806ac)
+![Screenshot (452)](https://github.com/KayyuruTharani/html-city-tourism/assets/142209319/6f6017a7-78dd-4eb6-bf74-1675bb71ac52)
+
+![Screenshot (439)](https://github.com/KayyuruTharani/html-city-tourism/assets/142209319/d7a7fdb5-158c-40ea-bfaf-7510d75ec0b2)
+![Screenshot (440)](https://github.com/KayyuruTharani/html-city-tourism/assets/142209319/45d16edd-10d6-46af-a066-ceab453f1f27)
